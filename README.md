@@ -1,2 +1,2 @@
 # HANADEV
-Getting Started with Multitarget Application Development in Cloud Foundry on SAP BTP
+This project follows the [Getting Started with Multitarget Application Development in Cloud Foundry on SAP BTP](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-developer-guide-for-cloud-foundry-multitarget-applications-sap-business-app-studio/getting-started-with-multitarget-application-development-in-cloud-foundry-on-sap-btp?locale=en-US&version=2025_3_QRC) guide
