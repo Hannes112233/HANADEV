@@ -1,0 +1,8 @@
+{
+  "RealTimeRepSynonym": {
+    "target": {
+      "object": "DBTABLOG",
+      "schema": "SAPHANADB"
+    }
+  }
+}

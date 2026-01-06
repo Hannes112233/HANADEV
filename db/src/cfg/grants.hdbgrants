@@ -1,32 +1,50 @@
 {
-    "primary_database":{
+    "SDI_CONN_H23": {
         "object_owner": {
+            // for .hdbsynonym
+            "schema_privileges": [
+                {
+                    "schema": "SAPHANADB",
+                    "type": "TABLE",
+                    "privileges_with_grant_option": [
+                        "SELECT",
+                        "EXECUTE",
+                        "UPDATE",
+                        "INSERT",
+                        "DELETE"
+                    ]
+                }
+            ],
+            // for .hdbreptask
             "global_object_privileges": [
                 {
                     "name": "sdi_atgvmls7026",
                     "type": "REMOTE SOURCE",
-                    "privileges": [
-                        "CREATE VIRTUAL TABLE",
-                        "CREATE VIRTUAL FUNCTION",
-                        "CREATE REMOTE SUBSCRIPTION",
-                        "PROCESS REMOTE SUBSCRIPTION EXCEPTION",
-                        "ALTER"
-                    ]
+                    "privileges": ["CREATE VIRTUAL TABLE", "CREATE REMOTE SUBSCRIPTION"]
                 }
             ]
         },
         "application_user": {
+            // for .hdbsynonym
+            "schema_privileges": [
+                {
+                    "schema": "SAPHANADB",
+                    "type": "TABLE",
+                    "privileges_with_grant_option": [
+                        "SELECT",
+                        "EXECUTE",
+                        "UPDATE",
+                        "INSERT",
+                        "DELETE"
+                    ]
+                }
+            ],
+            // for .hdbreptask
             "global_object_privileges": [
                 {
                     "name": "sdi_atgvmls7026",
                     "type": "REMOTE SOURCE",
-                    "privileges": [
-                        "CREATE VIRTUAL TABLE",
-                        "CREATE VIRTUAL FUNCTION",
-                        "CREATE REMOTE SUBSCRIPTION",
-                        "PROCESS REMOTE SUBSCRIPTION EXCEPTION",
-                        "ALTER"
-                    ]
+                    "privileges": ["CREATE VIRTUAL TABLE", "CREATE REMOTE SUBSCRIPTION"]
                 }
             ]
         }

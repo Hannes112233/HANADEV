@@ -9,7 +9,7 @@ modules:
   - name: hdi_db
     properties:
       TARGET_CONTAINER: ~{hdi-container-name}
-  - name: cross-container-service-1
+  - name: cross-container-service-3
     group: SERVICE_REPLACEMENTS
     properties:
       key: ServiceName_1
@@ -20,8 +20,12 @@ resources:
   properties:
     hdi-container-name: ${service-name}
 - name: cross-container-service-1
+  type: deleteme
+- name: cross-container-service-2
+  type: deleteme 
+- name: cross-container-service-3
   type: org.cloudfoundry.existing-service
   parameters:
-    service-name: primary_database
+    service-name: SDI_CONN_H23
   properties:
     the-service-name: ${service-name}
