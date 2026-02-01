@@ -1,7 +1,7 @@
 {
-  "RealTimeRepSynonym": {
+  "T00_Fed": {
     "target": {
-      "object": "DBTABLOG",
+      "object": "T001L",
       "schema": "SAPHANADB"
     }
   }

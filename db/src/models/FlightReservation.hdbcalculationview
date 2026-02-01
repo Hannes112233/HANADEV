@@ -13,7 +13,7 @@
 </dataSources>
 <snapshotProcedures/>
 <calculationViews>
-  <calculationView xsi:type="Calculation:JoinView" id="Reservations" cardinality="CN_N" joinType="inner">
+  <calculationView xsi:type="Calculation:JoinView" id="Reservations" cardinality="CN_N" joinType="inner" filterExpressionLanguage="SQL">
     <viewAttributes>
       <viewAttribute id="CARRID"/>
       <viewAttribute hidden="true" id="JOIN$PASSENGERID$PASSENGERID"/>

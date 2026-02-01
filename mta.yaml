@@ -14,6 +14,11 @@ modules:
     properties:
       key: ServiceName_1
       service: ~{the-service-name}
+  - name: cross-container-service-4
+    group: SERVICE_REPLACEMENTS
+    properties:
+      key: ServiceName_2
+      service: ~{the-service-name}
 resources:
 - name: hdi_db
   type: com.sap.xs.hdi-container
@@ -22,10 +27,16 @@ resources:
 - name: cross-container-service-1
   type: deleteme
 - name: cross-container-service-2
-  type: deleteme 
+  type: deleteme
 - name: cross-container-service-3
   type: org.cloudfoundry.existing-service
   parameters:
     service-name: SDI_CONN_H23
+  properties:
+    the-service-name: ${service-name}
+- name: cross-container-service-4
+  type: org.cloudfoundry.existing-service
+  parameters:
+    service-name: T00_ACCESS
   properties:
     the-service-name: ${service-name}
